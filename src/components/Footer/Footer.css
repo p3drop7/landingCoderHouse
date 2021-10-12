@@ -1,0 +1,62 @@
+.footer__container {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #151515;
+}
+
+.footer__line {
+    height: 10px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.footer__title {
+    font-size: 2em;
+    font-style: italic;
+    color: white;
+}
+
+.footer__title span {
+    color: yellow;
+}
+
+.footer__others {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer__others div {
+    margin: 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.footer__info {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.socialMedia {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    color: white;
+}
+
+.socialMedia div {
+    margin: 0px 10px;
+    font-size: 1.2em;
+}
