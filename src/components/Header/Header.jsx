@@ -1,4 +1,5 @@
 import React from 'react'
+import Counter from '../Counter/Counter'
 import "./Header.css"
 
 function Header() {
@@ -18,11 +19,7 @@ function Header() {
                 </div>
             </div>
 
-
-            <div className="counterContainer">
-                <div className="counterContainer__title">FALTAN</div>
-                <div className="counterContainer__counter">contador</div>
-            </div>
+            <Counter />
         </div>
     )
 }
