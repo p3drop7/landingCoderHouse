@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from "react";
+import CounterDetails from "./CounterDetails";
 import "./Counter.css"
 
 function Counter() {
 
   const calculateTimeLeft = () => {
+
     let year = new Date().getFullYear();
     const difference = +new Date(`${year}-12-1`) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
       timeLeft = {
-        dias: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        horas: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutos: Math.floor((difference / 1000 / 60) % 60),
-        segundos: Math.floor((difference / 1000) % 60),
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
       };
     }
 
@@ -21,7 +23,6 @@ function Counter() {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const [year] = useState(new Date().getFullYear());
 
   useEffect(() => {
     setTimeout(() => {
@@ -32,13 +33,13 @@ function Counter() {
   const timerComponents = [];
 
   Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
+    /* if (!timeLeft[interval]) {
       return;
-    }
+    } */
 
     timerComponents.push(
       <span>
-        {timeLeft[interval]} {interval}{" "}
+        {timeLeft[interval]}
       </span>
     );
   });
@@ -47,7 +48,7 @@ function Counter() {
     <div className="counterContainer">
       <div className="counterContainer__title">FALTAN</div>
       <div className="counterContainer__counter">
-        {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+        { timerComponents.length ? <CounterDetails timeLeft={timeLeft} /> : <span>Time's up!</span>}
       </div>
     </div>
   );

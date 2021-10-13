@@ -1,6 +1,6 @@
 .headerCointainer {
     min-height: 100vh;
-    height: 130vh;
+    height: 110vh;
     background-color: plum;
     display: flex;
     flex-flow: column nowrap;
@@ -61,17 +61,4 @@
     background-color: #DBE120;
     border: none;
     border-radius: 50px;
-}
-
-.counterContainer {
-    width: 100%;
-    margin-top: 40px;
-    position: relative;
-    top: 10%;
-}
-
-.counterContainer__title {
-    color: white;
-    font-style: italic;
-    font-size: 2.5em;
 }

@@ -1,0 +1,50 @@
+.counterContainer {
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+    top: 10%;
+}
+
+.counterContainer__title {
+    margin-bottom: 10px;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+.counterContainer__counter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.counterContainer__counter div {
+    width: 110px;
+    height: 110px;
+    margin: 10px 10px;
+    background-color: #DBE120;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.counterContainer__counter div h2 {
+    padding: 0px;
+    margin: 0px 0px 7px 0px;
+    color: black;
+    font-size: 2.5em;
+    font-weight: bolder;
+    font-style: italic;
+    background-color: transparent;
+}
+
+.counterContainer__counter div p {
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: bolder;
+    margin: 0px;
+    padding: 0px;
+}
