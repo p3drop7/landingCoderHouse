@@ -9,16 +9,22 @@
 }
 
 .topicsCard {
+    padding: 0px;
+    margin: 20px;
     width: 290px;
     height: 55%;
-    padding: 20px;
-    margin: 20px;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: rosybrown;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.topicsCard__innerContainer {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
 }
 
 .topicsCard__circle {
@@ -26,6 +32,14 @@
     width: 50px;
     background-color: white;
     border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_icon {
+    font-size: 1.4em;
 }
 
 .topicsCard__description {
@@ -53,10 +67,57 @@
 
 .topicsCard--1 {
     position: relative;
+    z-index: 1;
     top: -8%;
+    background-image: url("./assets/card-mkt.png");
+}
+
+.topicsCard__frontBrackground--1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0px;
+    height: 90%;
+    position: relative;
+    z-index: 2;
+    border-radius: 9px;
+    /* background: linear-gradient(to top, rgba(156, 14, 104, .7), rgba(67, 16, 116, .7)); */
+    background: linear-gradient(31deg, rgba(67, 16, 116, .8) 0%, rgba(156, 14, 104, .8) 100%);
+}
+
+.topicsCard--2 {
+    background-image: url("./assets/card-design.png");
+}
+
+.topicsCard__frontBrackground--2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0px;
+    height: 90%;
+    position: relative;
+    z-index: 2;
+    border-radius: 9px;
+    background: linear-gradient(42deg, rgba(60, 83, 236, 0.8) 0%, rgba(42, 15, 100, 0.8) 100%);
 }
 
 .topicsCard--3 {
     position: relative;
     top: 8%;
+    background-image: url("./assets/card-dev.png");
+}
+
+.topicsCard__frontBrackground--3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0px;
+    height: 90%;
+    position: relative;
+    z-index: 2;
+    border-radius: 9px;
+    background: linear-gradient(42deg, rgba(149, 42, 214, 0.8) 0%, rgba(74, 43, 119, 0.8) 100%);
 }
