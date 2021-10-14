@@ -35,13 +35,15 @@
 .topicsCard__title {
     margin-bottom: 20px;
     text-align: left;
-    font-size: 1.4em;
-    font-weight: bolder;
+    font-family: 'Gobold', sans-serif;
     font-style: italic;
+    font-size: 1.4em;
     color: white;
 }
 
 .topicsCard__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
     font-size: 1.2em;
     text-align: left;
     line-height: 23px;

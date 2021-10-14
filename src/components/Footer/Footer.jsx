@@ -23,7 +23,7 @@ function Footer() {
                 <div className="copyright">©2021 Coderhouse, todos los derechos reservados</div>
                 
                 <div className="socialMedia">
-                    <div>¡Seguinos!</div>
+                    <p>¡Seguinos!</p>
                     <div><BsInstagram /></div>
                     <div><BsYoutube /></div>
                     <div><BsLinkedin /></div>
