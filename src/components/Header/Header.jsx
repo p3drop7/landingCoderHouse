@@ -1,15 +1,13 @@
 import React from 'react'
 import Counter from '../Counter/Counter'
+import Nav from '../Nav/Nav'
 import "./Header.css"
 
 function Header() {
     return (
         <div className="headerCointainer">
-            
-            <div className="headerNav">
-                <div className="headerNav__title">CODER<span>SUMMIT21</span></div>
-                <div className="headerNav__navIcon">|||</div>
-            </div>
+
+            <Nav />
             
             <div className="mainContainer">
                 <div>

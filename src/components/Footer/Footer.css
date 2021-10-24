@@ -23,7 +23,26 @@
 }
 
 .footer__title span {
-    color: yellow;
+    background-image: url(https://img.freepik.com/free-photo/_40163-61.jpg?size=626&ext=jpg); 
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-name: fluid;
+    background-size: 500%;
+}
+
+@keyframes fluid {
+  from {
+    background-position: top;
+  }
+
+  to {
+    background-position: bottom;
+  }
 }
 
 .footer__others {

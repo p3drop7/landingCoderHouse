@@ -1,8 +1,9 @@
 .counterContainer {
     width: 100%;
-    margin-top: 40px;
+    margin-top: auto;
+    justify-self: flex-end;
     position: relative;
-    top: 10%;
+    top: 8%;
 }
 
 .counterContainer__title {
