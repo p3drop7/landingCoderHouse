@@ -1,7 +1,7 @@
 .topicsContainer {
     width: 100%;
     padding-bottom: 50px;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;

@@ -11,7 +11,7 @@
     width: 30%;
     font-family: 'Gobold', sans-serif;
     font-style: italic;
-    font-size: 1.7em;
+    font-size: 2em;
     color: white;
 }
 
@@ -25,6 +25,7 @@
     animation-direction: alternate;
     animation-timing-function: linear;
     animation-name: fluid;
+    background-size: 800%;
 }
 
 @keyframes fluid {
