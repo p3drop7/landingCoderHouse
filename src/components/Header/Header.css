@@ -41,12 +41,18 @@
 
 .mainContainer div {
     width: 450px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .mainContainer__date {
     font-family: 'Gobold', sans-serif;
     font-size: 2em;
     color: white;
+    display: flex !important;
+    flex-flow: row nowrap !important;
 }
 
 .mainContainer__date span {
@@ -61,14 +67,14 @@
     font-size: 4em;
 }
 
-.mainContainer button {
+/* .mainContainer button {
     font-weight: bolder;
     width: 50%;
     height: 3em;
     background-color: #DBE120;
     border: none;
     border-radius: 50px;
-}
+} */
 
 /*
 

@@ -1,6 +1,7 @@
 import React from 'react'
-import Counter from '../Counter/Counter'
 import Nav from '../Nav/Nav'
+import SingUpBox from '../SingUpBox/SingUpBox'
+import Counter from '../Counter/Counter'
 import "./Header.css"
 
 function Header() {
@@ -13,7 +14,8 @@ function Header() {
                 <div>
                     <div className="mainContainer__date">&lt; 21_<span>NOV</span>_2021 &gt;</div>
                     <div className="mainContainer__title">SE PARTE DE LO QUE SE VIENE</div>
-                    <button>Inscribirse</button>
+                    <SingUpBox />
+                    {/* <button>Inscribirse</button> */}
                 </div>
             </div>
 
