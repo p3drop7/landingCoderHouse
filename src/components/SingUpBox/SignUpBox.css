@@ -9,6 +9,7 @@
     background-color: rgba(50, 50, 50, 0.4);
     border: 2px solid yellow;
     border-radius: 8px;
+    transition: all 0.5s ease;
 }
 
 .signUpForm input {
@@ -65,4 +66,13 @@ input:focus {
     border-radius: 5px;
     background-color: yellow;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.signUpForm div button:hover {
+    background-color: #B6BB1A;
+}
+
+.signUpForm:hover {
+    border-color: #B6BB1A;
 }
